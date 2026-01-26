@@ -1,0 +1,111 @@
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding: 0 15px;
+}
+
+.account__title {
+  margin: 0;
+  margin-bottom: 73px;
+  padding-top: 63px;
+  min-height: 113px;
+  font: var(--font-h1_48bold);
+  color: var(--content_primary);
+}
+
+.account__wrap {
+  display: flex;
+  width: 575px;
+}
+
+.account__span {
+  padding-left: 32px;
+  font: var(--font-body24reg);
+  letter-spacing: -0.35px;
+  color: var(--content_primary);
+}
+
+.account__link {
+  position: relative;
+}
+.account__link:first-child {
+  margin-right: 63px;
+}
+.account__link_svg {
+  position: absolute;
+  top: 6px;
+}
+.account__link_svg_fav {
+  top: 6px;
+}
+.account__link_svg_set {
+  top: 3px;
+}
+.account__link_svg,
+.account__link_svg path {
+  fill: var(--content_primary);
+}
+
+.account__link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -7px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.account__link:focus {
+  outline: none;
+  transition: outline 0.3s ease-in-out;
+}
+
+.account__link:hover {
+  outline: none;
+  transition: outline 0.3s ease-in-out;
+}
+
+.account__link:focus {
+  outline: none;
+  transition: outline 0.3s ease-in-out;
+}
+
+.account__wrap .account__link:focus::after {
+  background-color: var(--bg_dc5dfc);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.account__wrap .account__link:hover::after {
+  background-color: var(--bg_dc5dfc);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.account__wrap .nav__link:active::after {
+  background-color: var(--bg_dc5dfc);
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+    margin-bottom: 47px;
+  }
+  .account__wrap {
+    width: 100%;
+  }
+  .account__title {
+    margin-bottom: 48px;
+    padding-top: 25px;
+    font: var(--font-body24bold);
+    min-height: auto;
+  }
+  .account__link:first-child {
+    margin-right: 28px;
+  }
+  .account__link_svg_fav {
+    left: 2px;
+  }
+}

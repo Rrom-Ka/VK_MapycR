@@ -1,0 +1,39 @@
+.movie__container {
+    margin-top: 40px;
+}
+
+.bottom__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.movie_description__container {
+    max-width: 1280px;
+    width: 100%;
+}
+
+.movie__like {
+    padding: 16px 22px !important;
+}
+
+.descr__title {
+    margin: 0;
+    margin-bottom: 64px;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.descr__list {
+    max-width: 500px;
+}
+
+.descr__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.descr__item:not(:last-child) {
+    margin-bottom: 24px;
+}

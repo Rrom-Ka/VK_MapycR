@@ -1,0 +1,58 @@
+.genrelist {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+  padding-top: 63px;
+  padding-bottom: 120px;
+}
+
+.genrelist__title {
+  margin: 0;
+  margin-bottom: 66px;
+  font: var(--font-h1_48bold);
+  letter-spacing: -1.4px;
+  color: var(--content_primary);
+}
+
+.genrelist__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 64px;
+  column-gap: 40px;
+}
+
+.error_loading {
+  margin: 0;
+  font: var(--font-body24reg);
+  color: var(--content_primary);
+}
+
+@media (max-width: 1366px) {
+  .genrelist__wrapper {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .error_loading {
+    font: var(--font-body14reg);
+  }
+
+  .genrelist {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 120px;
+  }
+
+  .genrelist__wrapper {
+    row-gap: 24px;
+  }
+
+  .genrelist__title {
+    margin-bottom: 39px;
+    font: var(--font-body24bold);
+    letter-spacing: -0.6px;
+  }
+}

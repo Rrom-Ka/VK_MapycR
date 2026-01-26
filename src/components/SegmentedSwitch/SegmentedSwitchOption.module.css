@@ -1,0 +1,13 @@
+.segmented__switch_option {
+  border: none;
+  padding: 10px;
+  background-color: var(--bg_white);
+  font: var(--font-body18bold);
+  color: var(--content_black);
+  cursor: pointer;
+}
+
+.segmented__switch_option[data-active="true"] {
+  background-color: var(--color__primary);
+  color: var(--color__background);
+}

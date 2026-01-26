@@ -1,0 +1,215 @@
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.error_loading {
+  margin: 0;
+  font: var(--font-body24reg);
+  color: var(--content_primary);
+}
+
+.hero {
+  padding-top: 33px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 588px;
+}
+
+.hero__info__left {
+  max-width: 600px;
+  padding-top: 73px;
+  padding-right: 10px;
+}
+.hero__info__right {
+  max-width: 680px;
+  max-height: 552px;
+  border-radius: 16px;
+}
+
+.annotation {
+  margin-bottom: 16px;
+}
+
+.annotation__collect {
+  font: var(--font-body18reg);
+  color: var(--content_secondary);
+}
+.marginNotLastchild16:not(:last-child) {
+  margin-right: 16px;
+}
+
+.annotation__rating {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+}
+
+.annotation__rating_gold {
+  background-color: var(--bg_a59400);
+}
+.annotation__rating_green {
+  background-color: var(--bg_308e21);
+}
+.annotation__rating_silver {
+  background-color: var(--bg_777777);
+}
+.annotation__rating_red {
+  background-color: var(--bg_c82020);
+}
+
+.annotation__rating_svg {
+  margin-right: 4px;
+}
+
+.annotation__rating_span {
+  font: var(--font-body18bold);
+  color: var(--content_primary);
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 17px;
+  min-height: 113px;
+  font: var(--font-h1_48bold);
+  color: var(--content_primary);
+}
+
+.hero__subtitle {
+  margin: 0;
+  margin-bottom: 56px;
+  min-height: 65px;
+  font: var(--font-body24reg);
+  color: var(--content_secondary);
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  line-clamp: 2;
+  box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.hero__wrapper_btn {
+  display: flex; /* Для выравнивания иконки и текста */
+  align-items: center; /* Вертикальное выравнивание элементов */
+  gap: 16px;
+}
+
+.hero__container_btn {
+  display: flex; /* Для выравнивания иконки и текста */
+  align-items: center; /* Вертикальное выравнивание элементов */
+  gap: 16px;
+}
+
+.btn__svg {
+  vertical-align: bottom;
+}
+
+.hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero__info__left {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero__info__right {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  .hero__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .hero__title {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .error_loading {
+    font: var(--font-body14reg);
+  }
+
+  .hero__info__right {
+    max-height: 380px;
+  }
+
+  .annotation {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
+  .hero {
+    padding-top: 0;
+    justify-content: start;
+    margin-bottom: 55px;
+  }
+  .hero__info__right {
+    max-height: 234px;
+  }
+
+  .annotation {
+    margin-bottom: 13px;
+  }
+
+  .annotation__collect {
+    font: var(--font-body14reg);
+  }
+
+  .hero__title {
+    margin-bottom: 11px;
+    font: var(--font-body24bold);
+  }
+
+  .hero__subtitle {
+    min-height: auto;
+    margin-bottom: 30px;
+    font: var(--font-body18reg);
+  }
+
+  .hero__wrapper_btn {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero__container_btn {
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .hero__btn_about {
+    width: 50%;
+  }
+}

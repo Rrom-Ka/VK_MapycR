@@ -1,0 +1,187 @@
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 24px;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__logo_img {
+  min-width: 145px;
+  max-width: 143px;
+  max-height: 31px;
+}
+
+.nav {
+  display: flex;
+  margin-right: 40px;
+}
+
+.nav__link {
+  position: relative;
+  font: var(--font-body24reg);
+  letter-spacing: 0.2px;
+  color: var(--white);
+}
+.nav__link_black {
+  font: var(--font-body18bold);
+  letter-spacing: 0;
+  color: var(--content_black);
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+
+.login__link {
+  margin-right: 0;
+}
+
+.nav__link_firstchild {
+  margin-right: 40px;
+}
+
+.nav__link::after,
+.login__link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -7px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav__link:focus,
+.login__link:focus {
+  outline: none;
+  transition: outline 0.3s ease-in-out;
+}
+
+.nav__link:hover,
+.login__link:hover {
+  outline: none;
+  transition: outline 0.3s ease-in-out;
+}
+
+.nav__link:focus,
+.login__link:focus {
+  outline: none;
+  transition: outline 0.3s ease-in-out;
+}
+
+.nav .nav__link:focus::after,
+.login .login__link:focus::after {
+  background-color: var(--bg_dc5dfc);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav .nav__link:hover::after,
+.login .login__link:hover::after {
+  background-color: var(--bg_dc5dfc);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav .nav__link:active::after,
+.login .login__link:active::after {
+  background-color: var(--bg_dc5dfc);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.search__wrap {
+  display: flex;
+  margin-right: 80px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 653px;
+}
+
+.label {
+  position: relative;
+  max-width: 100%;
+  border-radius: 8px;
+}
+.input {
+  width: 100%;
+  font: var(--font-body18reg);
+  background: var(--bg_secondary);
+  border: 0;
+  box-shadow: none;
+  color: var(--content_primary);
+  border: 1px solid var(--bg_secondary);
+  outline: none;
+  border-radius: 8px;
+  padding: 13px 16px 9px 51px;
+}
+
+.input::placeholder {
+  font: var(--font-body18reg);
+  color: var(--content_disabled);
+}
+
+.input__icon {
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  left: 17px;
+}
+
+.input__icon_path {
+  fill: var(--content_disabled);
+  fill-opacity: 1;
+}
+
+.input:focus,
+.input:hover {
+  border-color: var(--content_active);
+}
+.input:focus::placeholder,
+.input:hover::placeholder {
+  color: var(--content_disabled);
+}
+.input:focus::placeholder,
+.input:hover::placeholder {
+  color: var(--content_disabled);
+}
+
+.input:focus + .input__icon .input__icon_path,
+.input:hover + .input__icon .input__icon_path {
+  fill: var(--content_active);
+}
+
+.input:active + .input__icon .input__icon_path {
+  fill: var(--white);
+}
+
+.input:not(:placeholder-shown) + .input__icon .input__icon_path {
+  fill: var(--white);
+}
+
+.input:not(:placeholder-shown) {
+  border-color: var(--bg_secondary);
+}
+
+@media (max-width: 768px) {
+  .nav__link {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,34 @@
+/* Стили для скроллбара */
+::-webkit-scrollbar {
+    width: 12px;
+    background: #141414;
+}
+
+/* Трек (фон) скроллбара */
+::-webkit-scrollbar-track {
+    background: #141414;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+/* Ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, 
+        rgba(180, 169, 255, 0.8) 0%, 
+        rgba(103, 165, 235, 0.8) 100%);
+    border-radius: 20px;
+    border: 2px solid #141414;
+    transition: background 0.2s ease;
+}
+
+/* Ховер эффект для ползунка */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, 
+        rgba(180, 169, 255, 1) 0%, 
+        rgba(103, 165, 235, 1) 100%);
+}
+
+/* Плавный скролл для всей страницы */
+html {
+    scroll-behavior: smooth;
+}

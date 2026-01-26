@@ -1,0 +1,51 @@
+.genrecard {
+  width: 290px;
+  height: 304px;
+  border: none;
+  border-radius: 24px;
+  outline: 1px solid var(--white_25);
+  background-color: var(--bg_3c3c3c);
+  box-shadow: 0 0 80px 0 var(--white_33);
+}
+
+@media (max-width: 768px) {
+  .genrecard {
+    width: 335px;
+  }
+}
+
+.genrecard__linc {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.genrecard__genre {
+  display: inline-block;
+  padding: 8px 24px;
+  background-color: var(--bg_black);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.genrecard__genre_title {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  text-align: center;
+  font: var(--font-body24bold);
+  color: var(--content_primary);
+}
+
+.genrecard__cartoon {
+  height: 220px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.genrecard__cartoon_img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
