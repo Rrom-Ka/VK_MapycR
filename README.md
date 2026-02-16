@@ -1,28 +1,28 @@
-# React + TypeScript + Vite
+# CinemaGuide 🎬 — Онлайн-кинотеатр на React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современное веб-приложение для поиска фильмов, просмотра трейлеров и управления списком избранного. Проект разработан с использованием актуального стека технологий: React 18, TypeScript, React Query и Vite.
 
-Currently, two official plugins are available:
+## 🚀 Особенности проекта
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Главная страница**: Динамический баннер с рандомным фильмом и Топ-10 фильмов.
+- **Поиск**: Умный поиск фильмов по названию с модальным окном и поддержкой Swiper на мобильных устройствах.
+- **Жанры**: Просмотр каталога фильмов по категориям с бесконечной подгрузкой (Infinite Scroll).
+- **Страница фильма**: Детальная информация, описание, технические характеристики и встроенный плеер YouTube для трейлеров.
+- **Личный кабинет**: Система авторизации (вход/регистрация), валидация форм через Zod и управление списком избранного.
+- **Адаптивность**: Полная поддержка мобильных устройств (карусели Swiper, оптимизированные меню и формы).
 
-## Expanding the ESLint configuration
+## 🛠 Технологический стек
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend**: React 18 (TypeScript)
+- **State Management & Data Fetching**: [TanStack Query (React Query) v5](https://tanstack.com)
+- **Routing**: [React Router v6](https://reactrouter.com) (с поддержкой функций v7)
+- **Forms**: [React Hook Form](https://react-hook-form.com) + [Zod](https://zod.dev) (валидация схем)
+- **UI Components**: Слайдеры [Swiper](https://swiperjs.com), иконки через SVGR.
+- **Стилизация**: CSS Modules (Scoped CSS).
+- **Сборка**: Vite.
 
-- Configure the top-level `parserOptions` property like this:
+## 📦 Установка и запуск
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# VK_MapycR
+1. **Клонируйте репозиторий:**
+   ```bash
+   git clone https://github.com/Rrom-Ka/VK_MapycR.git
